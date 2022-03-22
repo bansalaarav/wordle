@@ -1,5 +1,6 @@
 from colorama import init, Fore, Back, Style
 import random
+import time
 
 init(convert=True)
 count = 0
@@ -102,7 +103,8 @@ def print_guess_answer(guess):
     """)
 
     if letters["l_1"] == letters["l_2"] == letters["l_3"] == letters["l_4"] == letters["l_5"] == "green":
-        print(f"{Fore.GREEN}{congrats_words[a]}!{Style.RESET_ALL}")
+        print(f"{Fore.GREEN}{congrats_words[a]}!{Style.RESET_ALL}\n")
+        time.sleep(5)
         exit()
 
 
@@ -136,3 +138,5 @@ while a < 7:
             a += 1
     count = 0
 print(f"{Fore.RED}{answer.upper()}{Style.RESET_ALL}")
+
+time.sleep(5)
