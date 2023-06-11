@@ -6,4 +6,4 @@ A terminal version of the popular game!
 
 ## How to play
 
-Double-click wordle.py or run `python wordle.py` in your terminal.
+Run `python wordle.py` in your terminal.
